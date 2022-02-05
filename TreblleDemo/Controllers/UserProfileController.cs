@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using Treblle.Net;
 using TreblleDemo.Models;
 
 namespace TreblleDemo.Controllers
 {
+    [Treblle]
     [Authorize]
     [Route("API/UserProfile")]
     public class UserProfileController : ApiController
